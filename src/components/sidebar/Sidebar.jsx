@@ -14,6 +14,7 @@ import {
   Report,
 } from "@mui/icons-material";
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -22,10 +23,12 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebbarTitle">Dashboard</h3>
           <ul className="sidebarList">
-            <li className="sidebarList__item active">
-              <LineStyle className="sidebarIcon" />
-              Home
-            </li>
+            <Link to="/" className="link">
+              <li className="sidebarList__item active">
+                <LineStyle className="sidebarIcon" />
+                Home
+              </li>
+            </Link>
             <li className="sidebarList__item">
               <Timeline className="sidebarIcon" />
               Analytics
@@ -39,14 +42,18 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebbarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <li className="sidebarList__item">
-              <PermIdentity className="sidebarIcon" />
-              Users
-            </li>
-            <li className="sidebarList__item">
-              <Storefront className="sidebarIcon" />
-              Products
-            </li>
+            <Link className="link" to="/users">
+              <li className="sidebarList__item">
+                <PermIdentity className="sidebarIcon" />
+                Users
+              </li>
+            </Link>
+            <Link to="/products" className="link">
+              <li className="sidebarList__item">
+                <Storefront className="sidebarIcon" />
+                Products
+              </li>
+            </Link>
             <li className="sidebarList__item">
               <AttachMoney className="sidebarIcon" />
               Transactions
@@ -79,7 +86,7 @@ export default function Sidebar() {
           <ul className="sidebarList">
             <li className="sidebarList__item">
               <WorkOutline className="sidebarIcon" />
-              Mangae
+              Manage
             </li>
             <li className="sidebarList__item">
               <Timeline className="sidebarIcon" />
