@@ -10,7 +10,7 @@ export default function home() {
   return (
     <div className="home">
         <FeaturedInfo />
-        <Chart data={userdata} title="User Analytics" grid dataKey="Active Users"/>
+        <Chart data={userdata} title="User Analytics" grid dataKey="name"/>
         <div className="homeWidgets">
           <WidgetsSm />
           <WidgetsLg />
