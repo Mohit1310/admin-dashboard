@@ -14,7 +14,7 @@ import {
   Report,
 } from "@mui/icons-material";
 import "./Sidebar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -23,12 +23,12 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebbarTitle">Dashboard</h3>
           <ul className="sidebarList">
-            <Link to="/" className="link">
-              <li className="sidebarList__item active">
+            <li>
+              <NavLink to="/" className="sidebarList__item link">
                 <LineStyle className="sidebarIcon" />
                 Home
-              </li>
-            </Link>
+              </NavLink>
+            </li>
             <li className="sidebarList__item">
               <Timeline className="sidebarIcon" />
               Analytics
@@ -42,18 +42,18 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebbarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <Link className="link" to="/users">
-              <li className="sidebarList__item">
+            <li>
+              <NavLink className="sidebarList__item link" to="/users">
                 <PermIdentity className="sidebarIcon" />
                 Users
-              </li>
-            </Link>
-            <Link to="/products" className="link">
-              <li className="sidebarList__item">
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/products" className="sidebarList__item link">
                 <Storefront className="sidebarIcon" />
                 Products
-              </li>
-            </Link>
+              </NavLink>
+            </li>
             <li className="sidebarList__item">
               <AttachMoney className="sidebarIcon" />
               Transactions
