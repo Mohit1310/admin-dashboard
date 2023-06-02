@@ -1,0 +1,129 @@
+.product {
+  flex: 4;
+  padding: 20px;
+}
+
+.product__titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product__addButton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product__top {
+  display: flex;
+}
+
+.product__topLeft,
+.product__topRight {
+  flex: 1;
+}
+
+.product__topRight {
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.product__infoImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.product__infoTop {
+  display: flex;
+  align-items: center;
+}
+
+.product__name {
+  font-weight: 600;
+}
+
+.product__infoBottom {
+  margin-top: 10px;
+}
+
+.product__infoItem {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.product__infoValue {
+  font-weight: 300;
+}
+
+.product__bottom {
+  padding: 20px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.product__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__formLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__formLeft > label {
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.product__formLeft > input {
+  margin-bottom: 10px;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.product__formLeft > select {
+  margin-bottom: 10px;
+}
+
+.product__uploadImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product__formRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.product__upload {
+  display: flex;
+  align-items: center;
+}
+
+.product__button {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
